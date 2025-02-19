@@ -1,0 +1,115 @@
+.header {
+    background: linear-gradient(to right, #3a0934, #121033);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 30px;
+}
+
+.text-purple {
+    color: #d8b4e2;
+}
+
+.btn-purple {
+    background-color: #6a0d61;
+    color: white;
+    border-color: #5a0b50;
+}
+
+.btn-purple:hover {
+    background-color: #5a0b50;
+    border-color: #490944;
+}
+
+.btn-outline-purple {
+    color: #d8b4e2;
+    border-color: #d8b4e2;
+}
+
+.btn-outline-purple:hover {
+    background-color: #d8b4e2;
+    color: #121033;
+}
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #2d0727, #0c0822);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.main-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.4;
+    backdrop-filter: blur(10px);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    max-width: 40%;
+}
+
+.btn-purple {
+    background-color: #6a5acd;
+    color: white;
+    border-color: #5a4db2;
+}
+
+.btn-purple:hover {
+    background-color: #5a4db2;
+    border-color: #4a3e99;
+}
+
+.images-container {
+    display: flex;
+    gap: 20px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    padding-right: 200px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.column img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.column.scroll-up {
+    animation-name: scrollLoopUp;
+}
+
+.column.scroll-down {
+    animation-name: scrollLoopDown;
+}
+
+@keyframes scrollLoopUp {
+    0% { transform: translateY(0%); }
+    100% { transform: translateY(-100%); }
+}
+
+@keyframes scrollLoopDown {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0%); }
+}
