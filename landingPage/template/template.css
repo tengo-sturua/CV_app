@@ -1,0 +1,281 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #2d0727, #0c0822);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#navbar {
+    width: 100%;
+    padding: 25px;
+    background: linear-gradient(to right, #2d0727, #0c0822);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Shadow effect */
+}
+
+#btn{
+    color: white;
+}
+
+#link{
+    list-style-type: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+span, a {
+    text-decoration: none;
+}
+
+
+
+
+.navbar-links a:hover {
+    color: #f1f1f1; /* Lighter color on hover */
+}
+
+.resume-container {
+    display: flex;
+    background: white;
+    width: 35%;
+    height: auto;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #4CAF50;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    
+    
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    width: 40%;
+    max-width: 40%;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin: 20px auto;
+    display: block;
+    background: url('https://via.placeholder.com/120') no-repeat center/cover;
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sidebar h4 {
+    margin-top: 20px;
+    font-size: 1rem;
+    border-bottom: 1px solid #ffffff60;
+    padding-bottom: 5px;
+}
+
+.sidebar p,
+.sidebar a {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    color: #ddd;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 20px 40px;
+    width: 75%;
+    box-sizing: border-box;
+    height: auto;
+    background-color: white;
+}
+
+.main-content h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #2c3e50;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.jobTitle{
+    text-align: center;
+}
+
+.main-content h3 {
+    color: #2c3e50;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.main-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.main-content ul li {
+    margin-bottom: 10px;
+}
+
+/* Editable content styling */
+li , .editable {
+    font-size: 1rem;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: #f9f9f9;
+    min-width: 100%;
+    transition: all 0.3s ease;
+}
+
+
+
+/* Remove default list bullets and dots for work experience */
+#work-experience li {
+    list-style: none;
+}
+
+/* On Focus: Editable content style */
+ .editable:focus {
+    outline: none;
+    border-color: #4CAF50;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Placeholder for empty editable content */
+.editable[contenteditable="true"]:empty:before {
+    content: attr(data-placeholder);
+    color: #aaa;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+
+.languages{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sideeditable{
+    outline: none;
+    border: none;
+    
+}
+
+#skill{
+    margin-top: 20px;
+}
+
+.skills{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* .sideeditable:focus{
+    border: 1px solid rgb(0, 128, 100);
+} */
+/* Skills and Languages Section */
+.skills span,
+.languages span {
+    background: #34495e;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    margin: 5px;
+    gap: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+
+.skilItem{
+    width: 50px;
+}
+
+.skills span:hover,
+.languages span:hover {
+    background: #32465a;
+}
+
+li{
+    list-style-type: none;
+}
+
+button {
+    background: #34495e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #2c3e50;
+}
+
+button:focus {
+    outline: none;
+}
+
+.pdf-btn {
+    width: auto; /* Adjust dynamically */
+    padding: 8px 15px; /* Uniform padding */
+    font-size: 14px; /* Adjusted for clarity */
+    text-align: center; /* Ensure centered text */
+    box-shadow: none; /* Avoid shadows for export */
+    position: absolute;
+    right: 150px;
+    bottom: 50px;
+}
+
+
+footer{
+    width: 100%;
+    padding: 10px;
+}
