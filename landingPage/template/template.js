@@ -41,8 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const updateResumeDisplay = () => {
-        // Update individual fields
-        document.querySelector('[data-key="name"]').innerText = resumeData.name;
+      document.querySelector('[data-key="name"]').innerText = resumeData.name;
         document.querySelector('[data-key="jobTitle"]').innerText = resumeData.jobTitle;
         document.querySelector('[data-key="phone"]').innerText = `Phone: ${resumeData.phone}`;
         document.querySelector('[data-key="email"]').innerHTML = `Email: <a href="mailto:${resumeData.email}">${resumeData.email}</a>`;
